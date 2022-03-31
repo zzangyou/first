@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'iconfont';  /* Project id 3281719 */
+    src: url('https://at.alicdn.com/t/font_3281719_ggz4ni9g9v4.woff2?t=1648620598386') format('woff2'),
+         url('https://at.alicdn.com/t/font_3281719_ggz4ni9g9v4.woff?t=1648620598386') format('woff'),
+         url('https://at.alicdn.com/t/font_3281719_ggz4ni9g9v4.ttf?t=1648620598386') format('truetype');
+  }
+  .iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+    .nav{
+        /* !-- 盒子有浮动 盒子高度超过父盒子高度 浮动不会压住文字和图片 文字围绕其显示  使用overflow解决--> */
+        overflow: hidden;
+    }
+.sk{
+    position: absolute;
+    border-left: 1px solid #c81523;
+    left: 190px;
+    top: 40px;
+    padding: 3px 14px;
+}
+.sk_list{
+    float: left;
+}
+.sk_con{
+    float: left;
+}
+.sk_list ul li{
+    float: left;
+}
+.sk_list ul li a{
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.sk_con ul li{
+    float: left;
+}
+.sk_con ul li a{
+    display: block;
+    line-height: 49px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+.sk_con .moree::after{
+    content:'\e669';
+    font-family:"iconfont";
+    margin-left:3px;
+}
+.sk_bd ul li{
+    float: left;
+    overflow: hidden;
+    margin-right: 13px;
+    /* 用的是c3盒子模型 多余的部分需要隐藏 */
+    width: 290px;
+    height: 460px;
+    /* 要给小li本来就添加一个边框 */
+    border: 1px solid transparent;
+}
+.sk_bd ul li:nth-child(4n){
+    margin-right: 0;
+    /* ul没给高度 需要清除浮动 */
+}
+.sk_bd ul li:hover{
+    border: 1px solid #c81523;
+}
